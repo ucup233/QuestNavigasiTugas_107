@@ -8,6 +8,10 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
+import androidx.compose.foundation.layout.width
+import androidx.compose.foundation.shape.RoundedCornerShape
+import androidx.compose.material3.Button
+import androidx.compose.material3.ButtonDefaults
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import com.example.tugasweek6.R
@@ -69,6 +73,16 @@ fun Home(
         }
         Spacer(modifier = Modifier.height(45.dp)
         )
+        Button(
+            onClick = OnSubmitBtnClick,
+            colors = ButtonDefaults.buttonColors(containerColor = Color(0xFF9C27B0)),
+            shape = RoundedCornerShape(50),
+            modifier = Modifier
+                .width(200.dp)
+                .height(50.dp)
+        ) {
+            Text(text = "Masuk", fontSize = 18.sp, color = Color.White)
+        }
 
 
     }
