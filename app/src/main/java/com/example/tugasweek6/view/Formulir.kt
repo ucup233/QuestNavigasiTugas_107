@@ -46,6 +46,15 @@ fun Form(modifier: Modifier = Modifier,
     ) {
         Column(horizontalAlignment = Alignment.CenterHorizontally
         ) {
-            
+            Text(
+                text = "Formulir Pendaftaran",
+                modifier = Modifier
+                    .fillMaxWidth()
+                    .padding(all = 16.dp),
+                textAlign = TextAlign.Center,
+                color = Color.Black,
+                fontSize = 50.sp
+            )
+        }
     }
 }
