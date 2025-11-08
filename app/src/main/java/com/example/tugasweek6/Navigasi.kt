@@ -9,6 +9,7 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
 import com.example.tugasweek6.view.Home
+import com.example.tugasweek6.view.TampilData
 
 enum class Navigasi {
     Formulir,
@@ -35,6 +36,17 @@ fun DataApp(
                     }
                 )
             }
+            composable(route = Navigasi.Detail.name) {
+                TampilData(
+                    onBackBtnClick = {
+                        navController.navigate(Navigasi.HomePage.name)
+                    },
+                    onSubmitBtnClick = {
+                        navController.navigate(Navigasi.Formulir.name)
+                    }
+                )
+            }
+
         }
     }
 }
