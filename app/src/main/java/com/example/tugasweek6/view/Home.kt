@@ -24,7 +24,7 @@ import androidx.compose.ui.unit.sp
 @Composable
 fun Home(
     modifier : Modifier = Modifier,
-    onSubmitBtnClick: () -> Unit
+    OnSubmitBtnClick: () -> Unit
 ){
     Column (
         modifier = modifier
@@ -50,6 +50,26 @@ fun Home(
         )
         Spacer(modifier = Modifier.height(50.dp)
         )
+        Column (
+            horizontalAlignment = Alignment.CenterHorizontally,
+            verticalArrangement = Arrangement.Center
+        ) {
+            Text(
+                text = "Yusuf Hidayat",
+                fontSize = 10.sp,
+                color = Color.Black,
+                textAlign = TextAlign.Center
+            )
+            Text(
+                text = "20230140107",
+                fontSize = 10.sp,
+                color = Color.Black,
+                textAlign = TextAlign.Center
+            )
+        }
+        Spacer(modifier = Modifier.height(45.dp)
+        )
+
 
     }
 }
