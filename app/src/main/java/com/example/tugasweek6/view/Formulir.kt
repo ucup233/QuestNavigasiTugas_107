@@ -111,6 +111,27 @@ fun Form(modifier: Modifier = Modifier,
                             )
                         }
                     }
+                    Spacer(modifier = Modifier.height(16.dp))
+                    Text(text = "Status Perkawinan")
+                    status.forEach { item ->
+                        Row(
+                            modifier = Modifier
+                                .selectable(
+                                    selected = textStatus == item,
+                                    onClick = { textStatus = item }
+                                ),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            RadioButton(
+                                selected = textStatus == item,
+                                onClick = { textStatus = item }
+                            )
+                            Text(
+                                text = item,
+                                modifier = Modifier.padding(start = 8.dp)
+                            )
+                        }
+                    }
                 }
             }
         }
