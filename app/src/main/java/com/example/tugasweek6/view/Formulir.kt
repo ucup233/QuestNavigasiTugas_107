@@ -155,8 +155,26 @@ fun Form(modifier: Modifier = Modifier,
                         ) {
                             Text(text = "Kembali")
                         }
+                        Button(
+                            modifier = Modifier.weight(1f),
+                            onClick = {
+                                nama = textNama
+                                alamat = textAlamat
+                                jenis = textJK
+                                stat = textStatus
+                            },
+                            enabled = textNama.isNotEmpty() &&
+                                    textJK.isNotEmpty() &&
+                                    textStatus.isNotEmpty() &&
+                                    textAlamat.isNotEmpty(),
+                            colors = ButtonDefaults.buttonColors(
+                                containerColor = Color.Magenta,
+                                contentColor = Color.White
+                            )
+                        ) {
+                            Text(text = "Submit")
+                        }
 
-                        
                     }
                 }
             }
