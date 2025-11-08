@@ -60,13 +60,13 @@ fun Home(
         ) {
             Text(
                 text = "Yusuf Hidayat",
-                fontSize = 10.sp,
+                fontSize = 20.sp,
                 color = Color.Black,
                 textAlign = TextAlign.Center
             )
             Text(
                 text = "20230140107",
-                fontSize = 10.sp,
+                fontSize = 20.sp,
                 color = Color.Black,
                 textAlign = TextAlign.Center
             )
