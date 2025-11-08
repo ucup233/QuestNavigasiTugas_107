@@ -7,6 +7,7 @@ import androidx.compose.foundation.layout.Spacer
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.size
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import com.example.tugasweek6.R
@@ -42,6 +43,13 @@ fun Home(
         )
         Image(
             painter = painterResource(id = R.drawable.logo_umy),
+            contentDescription = "Logo Umy",
+            modifier = Modifier
+                .size(180.dp)
+                .padding(2.dp)
         )
+        Spacer(modifier = Modifier.height(50.dp)
+        )
+
     }
 }
